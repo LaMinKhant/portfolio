@@ -13,3 +13,19 @@ function openTab(evt, tabName) {
     evt.currentTarget.classList.add("active");  // ✅ marks the clicked button
   }
 }
+
+const profilePic = document.getElementById('profile-pic');
+const images = ['img/profilepic.jpg', 'img/profilepic.png'];
+let current = 0;
+
+setInterval(() => {
+  // Add flip class
+  profilePic.classList.add('flip');
+
+  // Wait for half the animation, then switch image
+  setTimeout(() => {
+    current = (current + 1) % images.length;
+    profilePic.src = images[current];
+    profilePic.classList.remove('flip'); // reset flip
+  }, 300); // half of 0.6s transition
+}, 10000); // every 10 seconds
