@@ -1,0 +1,166 @@
+/* Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background: #fafafa;
+  color: #333;
+  line-height: 1.6;
+}
+
+.container {
+  max-width: 900px;
+  margin: 2rem auto;
+  padding: 2rem;
+  background: #fff;
+  border-radius: 12px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.05);
+}
+
+/* Profile Section */
+header.profile {
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+header.profile .avatar {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  margin-bottom: 1rem;
+}
+
+header.profile h1 {
+  font-size: 1.8rem;
+  margin-bottom: 0.3rem;
+}
+
+.subtitle {
+  color: #666;
+  font-size: 1rem;
+}
+
+/* Navbar Tabs */
+.navbar {
+  display: flex;
+  justify-content: center;
+  margin: 1.5rem 0;
+  gap: 1rem;
+}
+
+.tab-link {
+  padding: 0.6rem 1.2rem;
+  border: 1px solid #ddd;
+  background: #f9f9f9;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background 0.2s ease;
+}
+
+.tab-link:hover {
+  background: #eee;
+}
+
+.tab-link.active {
+  background: #333;
+  color: #fff;
+  border-color: #333;
+}
+
+/* Tab Content */
+.tab-content {
+  display: none;
+  padding: 1rem 0;
+  border-top: 1px solid #eee;
+}
+
+.tab-content.active {
+  display: block;
+}
+
+h2 {
+  font-size: 1.3rem;
+  margin-bottom: 0.8rem;
+  color: #333;
+}
+
+/* Contact */
+.contact-grid {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 1rem;
+  margin-top: 1rem;
+}
+
+.contact-grid div {
+  flex: 1;
+  min-width: 200px;
+}
+
+.label {
+  font-weight: bold;
+  font-size: 0.9rem;
+  color: #555;
+}
+
+/* Social */
+.social-links {
+  display: flex;
+  gap: 1rem;
+  flex-wrap: wrap;
+  margin-top: 1rem;
+}
+
+.btn {
+  padding: 0.6rem 1.2rem;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  text-decoration: none;
+  color: #333;
+  background: #f9f9f9;
+  transition: background 0.2s ease;
+}
+
+.btn:hover {
+  background: #eee;
+}
+
+.highlights {
+  margin-top: 1rem;
+}
+
+.highlights h3 {
+  font-size: 1.1rem;
+  margin-bottom: 0.5rem;
+  color: #444;
+}
+
+.highlights ul {
+  list-style-type: disc;
+  padding-left: 1.5rem;
+}
+
+.highlights li {
+  margin-bottom: 0.5rem;
+}
+
+
+    .list-container {
+      display: flex;
+      gap: 50px;
+      margin-top: 10px;
+    }
+
+    ul {
+      list-style-type: disc;
+      padding-left: 20px;
+    }
+
+    li {
+      margin-bottom: 8px;
+    }
