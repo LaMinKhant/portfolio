@@ -1,0 +1,216 @@
+Reset
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background: #fafafa;
+  color: #333;
+  line-height: 1.6;
+}
+
+.container {
+  max-width: 900px;
+  margin: 2rem auto;
+  padding: 2rem;
+  padding-top: 230px; /* profile height + navbar height */
+  background: #fff;
+  border-radius: 12px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.05);
+}
+
+/* Profile fixed at top */
+header.profile {
+  position: fixed;
+  top: 0;
+  left: 50%;                 /* push to middle of screen */
+  transform: translateX(-50%); /* center align */
+  width: 962px;              /* match container width */
+  background: #fff;
+  z-index: 100;
+  padding: 1rem 0;
+  text-align: center;
+}
+
+
+/* Navbar fixed below profile */
+.navbar {
+  position: fixed;
+  top: 200px;                /* below profile */
+  left: 50%;
+  transform: translateX(-50%);
+  width: 900px;              /* match container width */
+  background: #fff;
+  z-index: 100;
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  padding: 0.5rem;
+}
+
+/* Profile Section */
+header.profile {
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+header.profile .avatar {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  margin-bottom: 1rem;
+}
+
+header.profile h1 {
+  font-size: 1.8rem;
+  margin-bottom: 0.3rem;
+}
+.subtitle {
+  position: fixed;
+  top: calc(150px + 2rem); /* 150px header + 1rem margin */
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 100;
+  font-size: 1rem;
+  color: #666;
+  background: #fff;
+  padding: 0 10px;
+}
+
+
+/* Navbar Tabs */
+.navbar {
+  display: flex;
+  justify-content: center;
+  margin: 1.5rem 0;
+  gap: 1rem;
+}
+
+.tab-link {
+  padding: 0.6rem 1.2rem;
+  border: 1px solid #ddd;
+  background: #f9f9f9;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background 0.2s ease;
+}
+
+.tab-link:hover {
+  background: #eee;
+}
+
+.tab-link.active {
+  background: #333;
+  color: #fff;
+  border-color: #333;
+}
+
+/* Tab Content */
+.tab-content {
+  display: none;
+  padding: 1rem 0;
+  border-top: 1px solid #eee;
+}
+
+.tab-content.active {
+  display: block;
+}
+
+.section ul, .highlights ul, .list-container ul {
+  list-style-type: disc;
+  padding-left: 20px;
+}
+
+
+h2 {
+  font-size: 1.3rem;
+  margin-bottom: 0.8rem;
+  color: #333;
+}
+
+/* Contact */
+.contact-grid {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 1rem;
+  margin-top: 1rem;
+}
+
+.contact-grid div {
+  flex: 1;
+  min-width: 200px;
+}
+
+.label {
+  font-weight: bold;
+  font-size: 0.9rem;
+  color: #555;
+}
+/* Professional Experience Tab */
+.tab-experience {
+  display: none;
+  padding: 1rem 0;
+  border-top: 1px solid #eee;
+}
+
+.tab-experience.active {
+  display: block;
+}
+
+/*skill ul*/
+.list-container {
+      display: flex;
+      gap: 50px;
+      margin-top: 10px;
+    }
+
+    ul {
+      list-style-type: disc;
+      padding-left: 20px;
+    }
+
+    li {
+      margin-bottom: 8px;
+    }
+
+  /* Social Icons */
+.social-links {
+  display: flex;
+  gap: 1.5rem;
+  flex-wrap: wrap;
+  margin-top: 1rem;
+  /* justify-content: center; */
+}
+
+.icon-link {
+  font-size: 2rem;
+  color: #000;  /* Always black */
+  transition: transform 0.2s ease;
+}
+
+.icon-link:hover {
+  transform: scale(1.2); /* Slight zoom on hover */
+  color: #000; /* Stay black */
+}
+.avatar {
+  transition: opacity 0.5s ease-in-out;
+}
+#profile-pic {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  transition: transform 0.6s ease, opacity 0.6s ease;
+  backface-visibility: hidden;
+}
+.flip {
+  transform: rotateY(180deg);
+  opacity: 0;
+}
+
+p{
+ text-align: justify;
+}
