@@ -39,7 +39,7 @@ header.profile {
 /* Navbar fixed below profile */
 .navbar {
   position: fixed;
-  top: 200px;                /* below profile */
+  top: 220px;                /* below profile */
   left: 50%;
   transform: translateX(-50%);
   width: 900px;              /* match container width */
@@ -54,6 +54,7 @@ header.profile {
 /* Profile Section */
 header.profile {
   text-align: center;
+  height: 280px;
   margin-bottom: 2rem;
 }
 
@@ -70,7 +71,7 @@ header.profile h1 {
 }
 .subtitle {
   position: fixed;
-  top: calc(150px + 2rem); /* 150px header + 1rem margin */
+  top: calc(140px + 2.5rem); /* 140px header + 2.5rem margin */
   left: 50%;
   transform: translateX(-50%);
   z-index: 100;
