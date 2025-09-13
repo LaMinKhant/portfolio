@@ -69,9 +69,10 @@ header.profile h1 {
   font-size: 1.8rem;
   margin-bottom: 0.3rem;
 }
+
 .subtitle {
   position: fixed;
-  top: calc(140px + 2.5rem); /* 140px header + 2.5rem margin */
+  top: calc(140px + 3rem); /* Default for PC */
   left: 50%;
   transform: translateX(-50%);
   z-index: 100;
@@ -79,6 +80,17 @@ header.profile h1 {
   color: #666;
   background: #fff;
   padding: 0 10px;
+  width: 35%; /* Make it responsive */
+  text-align: center; /* Center the text */
+}
+
+/* Media query for smaller screens (e.g., mobile phones)  */ 
+@media (max-width: 768px) {
+  .subtitle {
+    top: 12rem; /* Adjust position for mobile */
+    font-size: 0.9rem; /* Smaller font size for mobile */
+    width: 95%; /* Adjust width for mobile */
+  }
 }
 
 
